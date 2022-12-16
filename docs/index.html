@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Triplanar Shader</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #333;
+      color: white;
+    }
+    /* Use a gradient background */
+    .gradient-bg {
+      background: linear-gradient(to bottom, #575757, #282828);
+    }
+    /* Add some padding and rounded corners to the main content container */
+    .main-content {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    /* Use a gradient for the header */
+    .header {
+      background: linear-gradient(to bottom, #282828, #575757);
+      border-radius: 10px 10px 0 0;
+      padding: 20px;
+      text-align: center;
+    }
+    /* Use rounded corners and a box shadow for the images */
+    .feature-image {
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-bg">
+    <div class="main-content">
+      <!-- Add a header with the title of the page -->
+      <div class="header">
+        <h1>Triplanar Shader</h1>
+      </div>
+      <!-- Add some information about triplanar mapping -->
+      <h2>What is Triplanar Mapping?</h2>
+      <p>Triplanar mapping is a technique for applying a texture to a surface without the need for UV coordinates. It works by projecting the texture onto the surface from three different axes (X, Y, and Z) and blending the resulting texture coordinates together based on the surface normal.</p>
+      <!-- Add an image and some information about one of the features of triplanar mapping -->
+      <h3>No UV Coordinates Required</h3>
+      <img class="feature-image" src="triplanar-no-uvs.png" alt="Screenshot showing a surface with triplanar mapping applied">
+      <p>One of the benefits of triplanar mapping is that it does not require UV coordinates to be set up on the mesh. This can be helpful in cases where the mesh does not have UVs, or where setting up UVs would be time-consuming or impractical.</p>
+      <!-- Add another feature and image -->
+      <h3>Continuous Mapping</h3>
+      <img class="feature-image" src="triplanar-continuous.png" alt="Screenshot showing a surface with triplanar mapping applied and the texture appearing seamless">
+      <p>Triplanar mapping can also provide seamless, continuous texture mapping across a surface. This can be especially useful for tiling textures or for surfaces that have complex curvature or topology, where traditional UV mapping techniques might struggle to achieve good results.</p>
+      <!-- Add another feature and image -->
+      <h3>Adjustable Blending</h3>
+      <img class="feature-image" src="triplanar-blending.png" alt="Screenshot showing a surface with triplanar mapping applied and the texture blending smoothly across the surface">
+      <p>Triplanar mapping allows for precise control over the way that the textures are blended together. By using the surface normal as a blending factor, it is possible to achieve smooth transitions and a more natural-looking result.</p>
+      <!-- Add a final feature and image -->
+      <h3>Works with Any Shader</h3>
+      <img class="feature-image" src="triplanar-diffuse.png" alt="Screenshot showing a surface with a diffuse shader and triplanar mapping applied">
+      <p>Triplanar mapping can be used with any shader, including complex shaders like PBR shaders. In this example, a simple diffuse shader is used as a base, with triplanar mapping applied to add texture and detail to the surface.</p>
+    </div>
+  </div>
+</body>
+</html>
